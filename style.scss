@@ -1,37 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: 'Libre Baskerville', serif;
     margin: 0;
+    // background-color: lightblue;
+    // margin-left: 2vw;
+
+    // .aside{
+    //     position: absolute;
+    //     height: 100%;
+    //     // justify-content: center;
+    //     top: 0;
+    //     right: 0;
+    //     border: 1px solid green;
+
+    //     .menu{
+    //         display: flex;
+    //         flex-direction: column;
+    //         position: sticky;
+    //         height: 100%;
+    //         text-align: center;
+    //         justify-content: center;
+    //         border: 1px solid red;
+    //         width: 4vh;
+    //     }
+
+    // }
+
+
 
     .wrapper{
         background-color: #eeeeee;
-        min-height: 700px;
+        // min-height: 700px;
         padding: 10px;
-        width: 95vw;
+        width: 90vw;
         margin: 0 auto;
         padding: 0;
 
+        .nav-top{
+            position: sticky;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 5vh;
+            z-index: 1;
+            background-color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding-top: 5px;
+        }
+
+        .nav-right{
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 0;
+            right: 0;
+            width: 5vh;
+        }
+
         .logo{
             background-image: linear-gradient(#f27255, #FF2957);
-            margin-top:5vh;
+            width: 50%;
+            // margin-top:5vh;
             min-height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            h1{
-                font-size: 9vw;
-                color: #191629;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: bold;
 
 
+            .greeting{
+                // display: flex;
+                position: relative;
 
-                .dot{
-                    color: white;
-                    font-size: 10vw;
+                h1{
+                    position: absolute;
+                    left: 70%;
+                    // top: 50%;
+
+                    font-size: 13vw;
+                    color: #191629;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 900;
+                    line-height: 12vw;
+    
+                    .dot{
+                        color: #FF2957;
+                        font-size: 10vw;
+                    }
+
+                    .newColor{
+                        color: #383645;
+                    }
                 }
             }
+
+
+
         }
+
+        .zdjecie{
+            background-image: url('img/desktop.jpg');
+            background-size: cover;
+            height: 90vh;
+        }
+
+        footer {
+            position: sticky;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 5vh;
+            background-color: white;
+            text-align: center;
+        }
+
     }
 
 
