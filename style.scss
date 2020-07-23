@@ -4,36 +4,42 @@
 
 
 body{
-    font-family: 'Libre Baskerville', serif;
     margin: 0;
-    // background-color: lightblue;
-    // margin-left: 2vw;
 
-    // .aside{
-    //     position: absolute;
-    //     height: 100%;
-    //     // justify-content: center;
-    //     top: 0;
-    //     right: 0;
-    //     border: 1px solid green;
+    .nav-container{
+        float: right;
+        width: 4vw;
+        margin-left: auto;
+        margin-top: 5vh;
+        height: 90vh;
+        padding: 0;
+        position: sticky;
+        top: 5vh;
 
-    //     .menu{
-    //         display: flex;
-    //         flex-direction: column;
-    //         position: sticky;
-    //         height: 100%;
-    //         text-align: center;
-    //         justify-content: center;
-    //         border: 1px solid red;
-    //         width: 4vh;
-    //     }
+        .nav-right{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
 
-    // }
+            .item{
+                padding-bottom: 5vh;
+                a{
+                    color: #191629;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+
 
 
 
     .wrapper{
         background-color: #eeeeee;
+        font-family: 'Libre Baskerville', serif;
+
         // min-height: 700px;
         padding: 10px;
         width: 90vw;
@@ -42,7 +48,6 @@ body{
 
         .nav-top{
             position: sticky;
-            left: 0;
             top: 0;
             width: 100%;
             height: 5vh;
@@ -53,20 +58,11 @@ body{
             padding-top: 5px;
         }
 
-        .nav-right{
-            display: flex;
-            flex-direction: column;
-            position: sticky;
-            top: 0;
-            right: 0;
-            width: 5vh;
-        }
-
         .logo{
             background-image: linear-gradient(#f27255, #FF2957);
             width: 50%;
             // margin-top:5vh;
-            min-height: 90vh;
+            height: 90vh;
 
 
             .greeting{
@@ -75,7 +71,7 @@ body{
 
                 h1{
                     position: absolute;
-                    left: 70%;
+                    left: 69%;
                     // top: 50%;
 
                     font-size: 13vw;
@@ -114,6 +110,37 @@ body{
             background-color: white;
             text-align: center;
         }
+
+
+        .omnie{
+            padding:5vh;
+
+
+            h2{
+                border-top: double;
+                font-family: 'Lato', sans-serif;
+                text-align:left;
+                font-size: 5vw;
+                border: 1px solid red;
+                margin: 0;
+
+            }
+
+            p{
+                // float: left;
+                text-align: justify;
+                border: 1px solid red;
+                font-size: 1.5vw;
+                width: 70%;
+
+            }
+
+            img{
+                border: 1px solid green;
+            }
+        }
+
+
 
     }
 

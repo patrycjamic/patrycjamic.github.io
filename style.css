@@ -4,12 +4,48 @@
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
   margin: 0;
+}
+
+body .nav-container {
+  float: right;
+  width: 4vw;
+  margin-left: auto;
+  margin-top: 5vh;
+  height: 90vh;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5vh;
+}
+
+body .nav-container .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+body .nav-container .nav-right .item {
+  padding-bottom: 5vh;
+}
+
+body .nav-container .nav-right .item a {
+  color: #191629;
+  font-size: 1.5vw;
 }
 
 body .wrapper {
   background-color: #eeeeee;
+  font-family: 'Libre Baskerville', serif;
   padding: 10px;
   width: 90vw;
   margin: 0 auto;
@@ -19,7 +55,6 @@ body .wrapper {
 body .wrapper .nav-top {
   position: -webkit-sticky;
   position: sticky;
-  left: 0;
   top: 0;
   width: 100%;
   height: 5vh;
@@ -30,26 +65,11 @@ body .wrapper .nav-top {
   padding-top: 5px;
 }
 
-body .wrapper .nav-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  right: 0;
-  width: 5vh;
-}
-
 body .wrapper .logo {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f27255), to(#FF2957));
   background-image: linear-gradient(#f27255, #FF2957);
   width: 50%;
-  min-height: 90vh;
+  height: 90vh;
 }
 
 body .wrapper .logo .greeting {
@@ -58,7 +78,7 @@ body .wrapper .logo .greeting {
 
 body .wrapper .logo .greeting h1 {
   position: absolute;
-  left: 70%;
+  left: 69%;
   font-size: 13vw;
   color: #191629;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -90,5 +110,29 @@ body .wrapper footer {
   height: 5vh;
   background-color: white;
   text-align: center;
+}
+
+body .wrapper .omnie {
+  padding: 5vh;
+}
+
+body .wrapper .omnie h2 {
+  border-top: double;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 5vw;
+  border: 1px solid red;
+  margin: 0;
+}
+
+body .wrapper .omnie p {
+  text-align: justify;
+  border: 1px solid red;
+  font-size: 1.5vw;
+  width: 70%;
+}
+
+body .wrapper .omnie img {
+  border: 1px solid green;
 }
 /*# sourceMappingURL=style.css.map */
