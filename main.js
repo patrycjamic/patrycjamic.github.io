@@ -26,13 +26,24 @@ $( document ).ready(function() {
         $(".nav-left").hover(function(){
         $(this).parent().css("background-color", "white");
         $(this).parent().animate({
-            width: "16vh",
-            height: "100vh"
+            width: "18vw",
+            // height: "100vh"
         });
-        // $(this).show("slow").css("width", "12vw").css("background-color", "white");
+
+        $(".lista").animate({
+            width: "16vw"
+        })
+        $(".lista").css("display", "block");
+        $(".menu").css("border-bottom", "double grey");
+
+
         }, function(){
             // change to any color that was previously used.
             $(this).parent().css("width", "4vw");
+            $(".lista").css("display", "none");
+            $(".menu").css("border", "none");
+
+            // $(".nav-top").css("width", "16vw");
         });
     });
 

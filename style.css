@@ -11,12 +11,9 @@ body {
 body .nav-container2 {
   float: left;
   width: 4vw;
-  margin-top: 5vh;
-  height: 90vh;
+  height: 100vh;
   padding: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5vh;
+  position: fixed;
   text-align: center;
 }
 
@@ -32,12 +29,33 @@ body .nav-container2 .nav-left {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  text-align: center;
   cursor: pointer;
 }
 
-body .nav-container2 .nav-left h3 {
-  border: 1px solid red;
-  font-size: 1.1vw;
+body .nav-container2 .nav-left .menu {
+  font-size: 1vw;
+  padding-bottom: 2vw;
+  border: none;
+}
+
+body .nav-container2 .nav-left .lista {
+  display: none;
+  list-style-type: none;
+  font-size: 1vw;
+}
+
+body .nav-container2 .nav-left .lista li {
+  padding-bottom: 10px;
+}
+
+body .nav-container2 .nav-left .lista li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .nav-container2 .nav-left .lista li a:hover {
+  color: #383645;
 }
 
 body .nav-container {
