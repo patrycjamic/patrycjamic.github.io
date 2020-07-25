@@ -22,6 +22,21 @@ $( document ).ready(function() {
 
     //     })
 
+    // $('.icon')
+
+    $( ".icon" ).hover(
+        function() {
+            $(this).animate({
+                margin: "2vh"
+            })
+
+        }, function() {
+            $( this ).css("margin-bottom", "0");
+
+        }
+      );
+
+
     $(function(){
         $(".nav-left").hover(function(){
         $(this).parent().css("background-color", "white");
@@ -33,8 +48,13 @@ $( document ).ready(function() {
         $(".lista").animate({
             width: "16vw"
         })
+
+
         $(".lista").css("display", "block");
         $(".menu").css("border-bottom", "double grey");
+
+
+        $('.logo').stop().slideUp('slow');
 
 
         }, function(){
@@ -42,6 +62,9 @@ $( document ).ready(function() {
             $(this).parent().css("width", "4vw");
             $(".lista").css("display", "none");
             $(".menu").css("border", "none");
+
+            $('.logo').stop().slideDown('slow');
+
 
             // $(".nav-top").css("width", "16vw");
         });
