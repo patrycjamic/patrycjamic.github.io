@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Libre Baskerville', serif;
+  margin: 0;
 }
 
 body .nav-container2 {
@@ -183,14 +184,14 @@ body .wrapper .section h2 {
   border-top: double;
   font-family: 'Lato', sans-serif;
   text-align: left;
-  font-size: 5vw;
+  font-size: 4.5vw;
   margin: 0;
   width: 100%;
 }
 
 body .wrapper .section p {
   text-align: justify;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
@@ -260,6 +261,10 @@ body .wrapper footer .footer-container {
     display: flex !important;
     background-color: white;
     font-size: 4vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5vh;
+    z-index: 1;
   }
   .menu-mobile .lista2 {
     display: none;

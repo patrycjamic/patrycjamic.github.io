@@ -8,17 +8,21 @@ $( document ).ready(function() {
     $( ".icon" ).hover(
         function() {
             $(this).animate({
-                margin: "2vh"
+                padding: "10px"
             })
 
         }, function() {
-            $( this ).css("margin-bottom", "0");
+            $(this).animate({
+                padding: "0"
+            })
 
         }
       );
 
 
     $(function(){
+        $(this).unbind('mouseenter')
+
         $(".nav-left").hover(function(){
         $(this).parent().css("background-color", "white");
         $(this).parent().animate({
@@ -29,15 +33,17 @@ $( document ).ready(function() {
             width: "16vw"
         })
 
-
         $(".lista").css("display", "block");
         $(".menu").css("border-bottom", "double grey");
 
-
         $('.slider').stop().slideUp('slow');
+        $(this).unbind('mouseleave')
+
+
 
 
         }, function(){
+
             $(this).parent().animate({
                 width: "4vw",
             });
@@ -46,7 +52,22 @@ $( document ).ready(function() {
 
             $('.slider').stop().slideDown('slow');
 
+
         });
+
+
     });
+
+
+
+            $(".link").click(function(){
+            $(".nav-left").parent().animate({
+                width: "4vw",
+            });
+            $(".lista").css("display", "none");
+            $(".menu").css("border", "none");
+
+            $('.slider').stop().slideDown('slow');
+        })
 });
 
