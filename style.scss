@@ -11,12 +11,9 @@ body{
     .nav-container2{
         float: left;
         width: 4vw;
-        // margin-left: auto;
-        // margin-top: 5vh;
         height: 100vh;
         padding: 0;
         position: fixed;
-        // top: 5vh;
         text-align: center;
 
         .nav-left{
@@ -26,8 +23,6 @@ body{
             height: 100%;
             text-align: center;
             cursor: pointer;
-            // writing-mode: vertical-rl;
-            // text-orientation: upright;
 
             .menu{
                 font-size: 1vw;
@@ -64,7 +59,6 @@ body{
     .nav-container{
         float: right;
         width: 4vw;
-        // margin-left: auto;
         margin-top: 5vh;
         height: 90vh;
         padding: 0;
@@ -79,7 +73,6 @@ body{
             text-align: center;
 
             .item{
-                // padding-bottom: 5vh;
                 padding-top: 5vh;
                 a{
                     color: #191629;
@@ -98,7 +91,6 @@ body{
     .wrapper{
         background-color: #eeeeee;
 
-        // min-height: 700px;
         padding: 10px;
         width: 90vw;
         margin: 0 auto;
@@ -118,23 +110,20 @@ body{
 
         }
 
+        .menu-mobile{display: none;}
+
         .logo{
             background-image: linear-gradient(#f27255, #FF2957);
             width: 50%;
-            // margin-top:5vh;
             height: 90vh;
 
 
             .greeting{
-                // display: flex;
                 position: relative;
 
                 h1{
                     position: absolute;
-                    // z-index: 2;
                     left: 69%;
-                    // top: 50%;
-
 
                     font-size: 13vw;
                     color: #191629;
@@ -167,15 +156,13 @@ body{
             position: sticky;
             left: 0;
             bottom: 0;
-            width: 100%;
             height: 5vh;
             background-color: white;
             text-align: center;
         }
 
-
-        .omnie{
-            padding:5vh;
+        .section{
+            padding:5vw;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -195,6 +182,9 @@ body{
                 font-size: 1.5vw;
                 flex: 3;
             }
+        }
+
+        .omnie{
 
             .img-container{
                 flex: 1;
@@ -210,18 +200,43 @@ body{
         }
 
 
+        .projekty{
+
+            .img-terminal{
+                flex: 1;
+                width: 15vw;
+                float: left;
+
+                text-align: center;
+
+                img{
+                    width: 65%;
+                }
+
+            }
+
+            
+        }
+
+
+        footer{
+            .footer-container{
+                display: none;
+
+            }
+        }
 
     }
 
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .logo{
         background-image: linear-gradient(#f27255, #FF2957);
         width: 50vw;
         // margin-top:5vh;
-        height: 50vh!important;
+        height: 35vh!important;
     }
 
     .zdjecie{
@@ -234,30 +249,39 @@ body{
 
 
     .nav-container{
-        margin-left: auto;
-        margin-top: 5vh;
-        // height: 90vh;
-        padding: 0;
-        position: fixed;
-        bottom:0;
+        display: none;
 
-        .nav-right{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            text-align: center;
 
-            // .item{
-            //     // padding-bottom: 5vh;
-            //     padding-top: 5vh;
-            //     a{
-            //         color: #191629;
-            //         font-size: 1.5vw;
-            //         .icon{
-            //             display: block;
-            //         }
-            //     }
-            // }
+    }
+
+    footer{
+        .footer-container{
+            display: flex!important;
+            justify-content: space-evenly;
+            padding-top: 2vh;
+            a{
+                color: black;
+            }
+
+        }
+    }
+
+    .menu-mobile{
+        display: flex!important;
+        background-color: white;
+        font-size: 4vw;
+
+        .lista2{
+            display: none;
+            li{
+                list-style-type: none;
+                a{
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1.6vh;
+                }
+            }
+            
         }
     }
 
