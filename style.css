@@ -32,9 +32,12 @@ body .nav-container2 .nav-left {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  text-align: center;
-  font-size: 1.2vw;
   cursor: pointer;
+}
+
+body .nav-container2 .nav-left h3 {
+  border: 1px solid red;
+  font-size: 1.1vw;
 }
 
 body .nav-container {

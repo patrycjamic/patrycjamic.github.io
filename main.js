@@ -26,7 +26,7 @@ $( document ).ready(function() {
         $(".nav-left").hover(function(){
         $(this).parent().css("background-color", "white");
         $(this).parent().animate({
-            width: "12vh",
+            width: "16vh",
             height: "100vh"
         });
         // $(this).show("slow").css("width", "12vw").css("background-color", "white");
